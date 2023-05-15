@@ -7,7 +7,7 @@
     <title>Oh my food</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="Style/css/style.css">
+    <link rel="stylesheet" type="text/css" href="Style/sass/main.css">
 
     <!-- Font Awesome-->
     <script src="https://kit.fontawesome.com/914b2f1c31.js" crossorigin="anonymous"></script>
@@ -21,52 +21,50 @@
 
 <body>
     <!-- HEADER-->
-    <header>
+    <header class="header">
         <a class="logo" href="">ohmyfood</a>
     </header>
 
     <!-- MAIN -->
-    <main>
+    <main class="main">
         <!-- Presentation -->
         <div class="presentation"> 
-            <div class="presentation_location"> <i class="fas fa-map-marker-alt"></i> Paris, Belleville</div>
-            <h1 class="presentation_title">Réservez le menu qui vous convient</h1>
-            <p class=" presentation_subtitle">Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
-            <button class="presentation_explore">Explorez nos restaurants</button>
+            <div class="presentation__location"> <i class="fas fa-map-marker-alt"></i> Paris, Belleville</div>
+            <h1 class="presentation__title">Réservez le menu qui vous convient</h1>
+            <p class=" presentation__subtitle">Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
+            <button class="presentation__explore">Explorez nos restaurants</button>
         </div>
 
         <!-- Fonctionnality-->
         <div class="functionning"> 
-            <h1 class="functionning_title">Fonctionnement</h1>
-            <div class="functionning_steps">
-                <div class="steps_container">
-                    <div class="steps_number">1</div>
-                    <i class="fa-mobile-alt fas steps_icon" aria-hidden="true"> </i>
-                    <p>Choisissez un restaurant</p>
-                </div>
+            <h1 class="functionning__title">Fonctionnement</h1>
+            <div class="functionning__container">
+                <div class="functionning__container--number">1</div>
+                <i class="fa-mobile-alt fas functionning__container--icon" aria-hidden="true"> </i>
+                <p>Choisissez un restaurant</p>
+            </div>
                 
-                <div class="steps_container">
-                    <div class="steps_number">2</div>
-                    <i class="fa-list-ul fas steps_icon" aria-hidden="true"> </i>
-                    <p>Composez votre menu</p>
-                </div>
+            <div class="functionning__container">
+                <div class="functionning__container--number">2</div>
+                <i class="fa-list-ul fas functionning__container--icon" aria-hidden="true"> </i>
+                <p>Composez votre menu</p>
+            </div>
 
-                <div class="steps_container">
-                    <div class="steps_number">3</div>
-                    <i class="fa-store fas steps_icon" aria-hidden="true"> </i>
-                    <p>Dégustez au restaurant</p>
-                </div>
+            <div class="functionning__container">
+                <div class="functionning__container--number">3</div>
+                <i class="fa-store fas functionning__container--icon" aria-hidden="true"> </i>
+                <p>Dégustez au restaurant</p>
             </div>
         </div>
 
         <!-- Restaurants -->
         <div class="restaurants">
             <h1>Restaurants</h1>
-            <container class="restaurants_grid_container">
-                <a href="#" class="restaurants_article">
+            <container class="restaurants__grid">
+                <a href="#" class="restaurants__article">
                     <img src="./Assets/Img/restaurant1.jpg" alt="">
-                    <div class="new">nouveau</div>
-                    <div class=" restaurants_infos">
+                    <div class="restaurants__article--new">nouveau</div>
+                    <div class="restaurants__article--infos">
                         <div class="name">
                             <h3>La palette du goût</h3>
                             <p>Ménilmontant</p>
@@ -75,9 +73,9 @@
                     </div> 
                 </a>
     
-                <a href="#" class="restaurants_article">
+                <a href="#" class="restaurants__article">
                     <img src="./Assets/Img/restaurant2.jpg" alt="">
-                    <div class=" restaurants_infos">
+                    <div class="restaurants__article--infos">
                         <div class="name">
                             <h3>La note enchantée</h3>
                             <p>Charonne</p>
@@ -87,9 +85,9 @@
                     </div> 
                 </a>
     
-                <a href="#" class="restaurants_article">
+                <a href="#" class="restaurants__article">
                     <img src="./Assets/Img/restaurant3.jpg" alt="">
-                    <div class=" restaurants_infos">
+                    <div class="restaurants__article--infos">
                         <div class="name">
                             <h3>À la française</h3>
                             <p>Cité rouge</p>
@@ -99,9 +97,9 @@
                     
                 </a>
     
-                <a href="#" class="restaurants_article">
+                <a href="#" class="restaurants__article">
                         <img src="./Assets/Img/restaurant4.jpg" alt="">
-                        <div class="restaurants_infos">
+                        <div class="restaurants__article--infos">
                             <div class="name">
                                 <h3>La délice des sens</h3>
                                 <p>Folie-Méricourt</p>
@@ -117,8 +115,8 @@
     <footer>
 
         <!-- Nav-->
-        <nav>
-            <a class="logo" href="">ohmyfood</a>
+        <nav class="nav">
+            <a class="nav__logo" href="">ohmyfood</a>
             <ul> <li><a href=""> <i class="fas fa-utensils"></i> Proposer un restaurant </a></li> </ul>
             <ul> <li><a href=""> <i class="fas fa-hands-helping"></i> Devenir partenaire </a></li> </ul>
             <ul> <li> <a href=""> Mentions légales </a> </li> </ul>
