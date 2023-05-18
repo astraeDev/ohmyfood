@@ -19,109 +19,107 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <!-- HEADER-->
-    <header class="header">
-        <a class="logo" href="">ohmyfood</a>
-    </header>
+    <body>
+        <!-- HEADER-->
+        <header class="header">
+            <a class="logo" href="">ohmyfood</a>
+        </header>
 
-    <!-- MAIN -->
-    <main class="main">
-        <!-- Presentation -->
-        <div class="presentation"> 
-            <div class="presentation__location"> <i class="fas fa-map-marker-alt"></i> Paris, Belleville</div>
-            <h1 class="presentation__title">Réservez le menu qui vous convient</h1>
-            <p class=" presentation__subtitle">Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
-            <button class="presentation__explore">Explorez nos restaurants</button>
-        </div>
-
-        <!-- Fonctionnality-->
-        <div class="functionning"> 
-            <h1 class="functionning__title">Fonctionnement</h1>
-            <div class="functionning__container">
-                <div class="functionning__container--number">1</div>
-                <i class="fa-mobile-alt fas functionning__container--icon" aria-hidden="true"> </i>
-                <p>Choisissez un restaurant</p>
-            </div>
-                
-            <div class="functionning__container">
-                <div class="functionning__container--number">2</div>
-                <i class="fa-list-ul fas functionning__container--icon" aria-hidden="true"> </i>
-                <p>Composez votre menu</p>
+        <!-- MAIN -->
+        <main class="main">
+            <!-- Presentation -->
+            <div class="presentation"> 
+                <div class="presentation__location"> <i class="fas fa-map-marker-alt"></i> Paris, Belleville</div>
+                <h1 class="presentation__title">Réservez le menu qui vous convient</h1>
+                <p class=" presentation__subtitle">Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
+                <button class="presentation__explore">Explorez nos restaurants</button>
             </div>
 
-            <div class="functionning__container">
-                <div class="functionning__container--number">3</div>
-                <i class="fa-store fas functionning__container--icon" aria-hidden="true"> </i>
-                <p>Dégustez au restaurant</p>
-            </div>
-        </div>
-
-        <!-- Restaurants -->
-        <div class="restaurants">
-            <h1>Restaurants</h1>
-            <container class="restaurants__grid">
-                <a href="#" class="restaurants__article">
-                    <img src="./Assets/Img/restaurant1.jpg" alt="">
-                    <div class="restaurants__article--new">nouveau</div>
-                    <div class="restaurants__article--infos">
-                        <div class="name">
-                            <h3>La palette du goût</h3>
-                            <p>Ménilmontant</p>
-                        </div>
-                        <div class="favoris"> <i class="fas fa-heart"></i> </div>
-                    </div> 
-                </a>
-    
-                <a href="#" class="restaurants__article">
-                    <img src="./Assets/Img/restaurant2.jpg" alt="">
-                    <div class="restaurants__article--infos">
-                        <div class="name">
-                            <h3>La note enchantée</h3>
-                            <p>Charonne</p>
-                        </div>
-                        <div class="favoris"> <i class="fas fa-heart"></i> </div>
-                            <!-- fill and stroke propriété css pour le remplir -->
-                    </div> 
-                </a>
-    
-                <a href="#" class="restaurants__article">
-                    <img src="./Assets/Img/restaurant3.jpg" alt="">
-                    <div class="restaurants__article--infos">
-                        <div class="name">
-                            <h3>À la française</h3>
-                            <p>Cité rouge</p>
-                        </div>
-                        <div class="favoris"> <i class="fas fa-heart"></i> </div>
-                    </div>
+            <!-- Fonctionnality-->
+            <div class="functionning"> 
+                <h1 class="functionning__title">Fonctionnement</h1>
+                <div class="functionning__container">
+                    <div class="functionning__container--number">1</div>
+                    <i class="fa-mobile-alt fas functionning__container--icon" aria-hidden="true"> </i>
+                    <p>Choisissez un restaurant</p>
+                </div>
                     
-                </a>
-    
-                <a href="#" class="restaurants__article">
-                        <img src="./Assets/Img/restaurant4.jpg" alt="">
+                <div class="functionning__container">
+                    <div class="functionning__container--number">2</div>
+                    <i class="fa-list-ul fas functionning__container--icon" aria-hidden="true"> </i>
+                    <p>Composez votre menu</p>
+                </div>
+
+                <div class="functionning__container">
+                    <div class="functionning__container--number">3</div>
+                    <i class="fa-store fas functionning__container--icon" aria-hidden="true"> </i>
+                    <p>Dégustez au restaurant</p>
+                </div>
+            </div>
+
+            <!-- Restaurants -->
+            <div class="restaurants">
+                <h1>Restaurants</h1>
+                <container class="restaurants__grid">
+                    <a href="#" class="restaurants__article">
+                        <img src="./Assets/Img/restaurant1.jpg" alt="">
+                        <div class="restaurants__article--new">nouveau</div>
                         <div class="restaurants__article--infos">
                             <div class="name">
-                                <h3>La délice des sens</h3>
-                                <p>Folie-Méricourt</p>
+                                <h3>La palette du goût</h3>
+                                <p>Ménilmontant</p>
                             </div>
-                            <div class="favoris"> <i class="fas fa-heart"></i> </div>
+                            <div class="favoris"> <i class="fas fa-heart restaurants__article--heart"></i> </div>
+                        </div> 
+                    </a>
+                    <a href="#" class="restaurants__article">
+                        <img src="./Assets/Img/restaurant2.jpg" alt="">
+                        <div class="restaurants__article--infos">
+                            <div class="name">
+                                <h3>La note enchantée</h3>
+                                <p>Charonne</p>
+                            </div>
+                            <div class="favoris"> <i class="fas fa-heart restaurants__article--heart"></i> </div>
+                                <!-- fill and stroke propriété css pour le remplir -->
+                        </div> 
+                    </a>
+        
+                    <a href="#" class="restaurants__article">
+                        <img src="./Assets/Img/restaurant3.jpg" alt="">
+                        <div class="restaurants__article--infos">
+                            <div class="name">
+                                <h3>À la française</h3>
+                                <p>Cité rouge</p>
+                            </div>
+                            <div class="favoris"> <i class="fas fa-heart restaurants__article--heart"></i> </div>
                         </div>
-                </a>
-            </container>
-        </div>
-    </main>
+                        
+                    </a>
+        
+                    <a href="#" class="restaurants__article">
+                            <img src="./Assets/Img/restaurant4.jpg" alt="">
+                            <div class="restaurants__article--infos">
+                                <div class="name">
+                                    <h3>La délice des sens</h3>
+                                    <p>Folie-Méricourt</p>
+                                </div>
+                                <div class="favoris"> <i class="fas fa-heart restaurants__article--heart"></i> </div>
+                            </div>
+                    </a>
+                </container>
+            </div>
+        </main>
+        <!-- FOOTER -->
+        <footer>
 
-    <!-- FOOTER -->
-    <footer>
-
-        <!-- Nav-->
-        <nav class="nav">
-            <a class="nav__logo" href="">ohmyfood</a>
-            <ul> <li><a href=""> <i class="fas fa-utensils"></i> Proposer un restaurant </a></li> </ul>
-            <ul> <li><a href=""> <i class="fas fa-hands-helping"></i> Devenir partenaire </a></li> </ul>
-            <ul> <li> <a href=""> Mentions légales </a> </li> </ul>
-            <ul> <li> <a href="mailto:contact@ohmyfood.com"> Contact </a> </li> </ul>
-        </nav>
-    </footer>
-</body>
+            <!-- Nav-->
+            <nav class="nav">
+                <a class="nav__logo" href="">ohmyfood</a>
+                <ul> <li><a href=""> <i class="fas fa-utensils"></i> Proposer un restaurant </a></li> </ul>
+                <ul> <li><a href=""> <i class="fas fa-hands-helping"></i> Devenir partenaire </a></li> </ul>
+                <ul> <li> <a href=""> Mentions légales </a> </li> </ul>
+                <ul> <li> <a href="mailto:contact@ohmyfood.com"> Contact </a> </li> </ul>
+            </nav>
+        </footer>
+    </body>
 </html>
