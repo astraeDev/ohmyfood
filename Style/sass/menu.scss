@@ -1,0 +1,61 @@
+// ---------- Variables
+@import 'variables';
+
+// --------- Base & Layout
+@import 'breakpoints';
+
+// ---------- Mixins
+@import 'mixins';
+
+
+// ---------- GENERAL
+*   body {
+    font-family: $font-stack;
+    margin: 0;
+    padding: 0;
+    
+    a {
+        text-decoration: none;
+        color: inherit;
+    } 
+    
+    ul li { list-style-type: none; }
+        
+    button { border: inherit; }
+}
+
+
+// ---------- HEADER
+.header {
+    @include flexbox-absolute-center();
+    @include logo_baneer();
+}
+
+
+// ----------  FOOTER
+footer {
+    background: $dark;
+    color: white;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.nav {
+
+        &__logo {
+            @include logo_baneer() ;
+            font-size: 24px;
+            margin-left: 1.5rem;
+        }
+
+        ul  {
+            display: flex;
+            font-size: 16px;
+            flex-direction: column ;
+            height: 1em;
+        }
+}
+
