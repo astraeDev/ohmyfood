@@ -1,47 +1,19 @@
-//  ----------  Variables
-$font-stack: 'Roboto' , 'Shrikhand';
-$roboto:'Roboto' ;
-$shrikhand:'Shrikhand' ;
-$purple: #9356DC;
-$pink: #FF79DA;
-$blue: #99E2D0;
-$dark:#353535;
-$gradient: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
 
+// ---------- Variables
+@import 'variables';
+
+// --------- Base & Layout
+@import 'breakpoints';
 
 // ---------- Mixins
+@import 'mixins';
 
-@mixin flexbox-absolute-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@mixin logo_baneer {
-    font-family: $shrikhand;
-    font-size: 2rem;
-    padding: 0.5em;
-}
-
-@mixin button_hover {
-    opacity: 0.8;
-    cursor: pointer;
-    transition: .3s;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.6);    
-}
-
-@mixin button_style {
-    border-radius: 35px;
-    background: $gradient;
-    color: white;
-}
 
 // ---------- GENERAL
 *   body {
     font-family: $font-stack;
     margin: 0;
     padding: 0;
-    
     
     a {
         text-decoration: none;
@@ -94,12 +66,10 @@ $gradient: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 10
     }
 
     &__explore {
-        @include button_style();
+        border-radius: 35px;
+        background: $gradient;
+        color: white;
         padding: 0.8em 1.2em;
-
-        &:hover {
-            @include button_hover();
-        }
     }
 }   
 
@@ -191,16 +161,9 @@ $gradient: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 10
             padding: 0 1rem;
             font-size: 1rem;
         }
-
-        .fa-heart {
-            background: $gradient;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            -moz-background-clip: text;
-            -moz-text-fill-color: transparent;
-        }
     }
 }
+
 
 // ----------  FOOTER
 footer {
@@ -214,8 +177,9 @@ footer {
 
 
 .nav {
+
         &__logo {
-            @include logo_baneer();
+            @include logo_baneer() ;
             font-size: 24px;
             margin-left: 1.5rem;
         }
@@ -227,3 +191,4 @@ footer {
             height: 1em;
         }
 }
+

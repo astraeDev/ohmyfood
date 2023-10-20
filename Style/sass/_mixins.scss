@@ -1,0 +1,14 @@
+// Utilities 
+@mixin flexbox-absolute-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+// Component
+@mixin logo_baneer {
+    font-family: $shrikhand;
+    font-size: 2rem;
+    padding: 0.5em;
+}
