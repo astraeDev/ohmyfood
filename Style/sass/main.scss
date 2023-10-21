@@ -48,7 +48,6 @@
     align-items: center;
     justify-content: center;
 
-
     i {
         display: grid;
         background: $gradient;
@@ -121,7 +120,6 @@
     }
 }   
 
-
 // > Fonctionnality
 .functionning {
     @include flexbox-absolute-center();
@@ -165,7 +163,6 @@
         }
     }
 };
-
 
     // > Restaurants
 
