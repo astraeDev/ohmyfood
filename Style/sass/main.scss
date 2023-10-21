@@ -34,8 +34,7 @@
 
 // ---------- HEADER
 .header {
-    @include flexbox-absolute-center();
-    @include logo_baneer();
+    @include header();
 }
 
 // ----------  MAIN 
@@ -47,10 +46,11 @@
         font-size: 1.3rem;
     }
 }
+
     // > Presentation
     
 .presentation {
-    background-color:#f3f3f3;
+    background-color:$lightgrey;
     text-align: center;
     padding-bottom: 1rem;
 
@@ -66,10 +66,18 @@
     }
 
     &__explore {
+        height:40px;
         border-radius: 35px;
         background: $gradient;
         color: white;
         padding: 0.8em 1.2em;
+        box-shadow: .25rem .25rem 10px rgba(0,0,0,.25);
+        transition: all 0.3s;
+        &:hover {
+            cursor: pointer;
+            padding: 0.8em 1.5em;
+            box-shadow: .25rem .25rem 10px rgba(138, 15, 150, 0.5);
+        }
     }
 }   
 
@@ -86,12 +94,18 @@
         justify-content: flex-start;
         gap: 1rem;
         padding-right: 9rem;
-        background-color: #f3f3f3 ;
+        background-color: $lightgrey ;
         font-size: 14px;
         border-radius: 15px;
         margin-bottom: 1rem;
         width: 25%;
         min-width: 250px;
+        transition: transform 0.2s;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.04)
+        }
         
         &--number {
             @include flexbox-absolute-center();
@@ -118,7 +132,7 @@
 .restaurants {
     @include flexbox-absolute-center();
     flex-direction: column;
-    background: #f3f3f3;
+    background: $lightgrey;
     width: 100%;
     padding-bottom: 3rem;
     
@@ -135,6 +149,12 @@
         background: white;
         border-radius: 15px;
         position: relative;
+        
+        transition: transform 0.3s;
+
+        &:hover {
+            transform: scale(1.01);
+        }
         
         img{
             width:100%;
@@ -160,6 +180,29 @@
             align-items: center;
             padding: 0 1rem;
             font-size: 1rem;
+
+            .far , .fas{
+                transition: color 0.5s ease;
+                @include md { transform: scale(1.3); }
+                @include xl { transform: scale(1.6); }
+            }
+            
+            .favoris .fas.fa-heart {
+                display: none;
+            }
+
+            .favoris:hover .fas.fa-heart{
+                display: inline-block;
+                background-image: $gradient;
+                color: transparent;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+            }
+
+            .favoris:hover .far.fa-heart {
+                display:none;
+            }
+            
         }
     }
 }
@@ -167,28 +210,5 @@
 
 // ----------  FOOTER
 footer {
-    background: $dark;
-    color: white;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    @include footer();
 }
-
-
-.nav {
-
-        &__logo {
-            @include logo_baneer() ;
-            font-size: 24px;
-            margin-left: 1.5rem;
-        }
-
-        ul  {
-            display: flex;
-            font-size: 16px;
-            flex-direction: column ;
-            height: 1em;
-        }
-}
-

@@ -7,6 +7,9 @@
 
      <!-- CSS -->
      <link rel="stylesheet" type="text/css" href="/Style/sass/menu.css">
+    
+     <!-- Font Awesome-->
+    <script src="https://kit.fontawesome.com/914b2f1c31.js" crossorigin="anonymous"></script>
 
      <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,112 +26,152 @@
     </header>
 
     <!-- Banner-->
-    <div class="banner"></div>
+    <div class="banner">
+        <img src="/Assets/Img/restaurant1.jpg" alt="" class="banner__image">
+    </div>
+    
 
     <!-- Menu -->
+
     <div class="menu">
 
         <!-- Menu header -->
-        <div class="menu_header">
-            <div class="menu_title">À la française</div>
-            <div class="menu_heart"></div>
+        <div class="menu__header">
+            <h2 class="menu__header--title">À la française</h2>
+            <div class="menu__header--heart">
+                <i class="far fa-heart fa-2x "></i>
+                <i class="fas fa-heart fa-2x"> </i>
+            </div>
         </div>
 
         <!-- Menu options bloc -->
-        <div class="menu_options_bloc">
-
+        <div class="options_bloc">
             <!-- option1 : starter -->
-            <div class="menu_option">
-                <div class="option_title"> Entrées</div>
-                <div class="option_list">
-                    <div class="option_card">
-                        <div class="option_dish">
-                            <div class="dish_title">Tartare de poulpe acidulé</div>
-                            <div class="dish_subtitle">Aux zestes d'orange</div>
+            <div class="option">
+                <h3 class="option__title"> Entrées</h3>
+                <div class="option__list">
+                    <div class="option__list--card">
+                        <div class="dish">
+                            <div class="dish__title">Tartare de poulpe acidulé</div>
+                            <div class="dish__subtitle">Aux zestes d'orange</div>
                         </div>
-                        <div class="option_price"> 25€ </div>
+
+                        <div class="price_validation"> 
+                            <div class="price"> 25€ </div>
+                            <div class="validation"> <i class="fas fa-check-circle"></i></div>
+                        </div>
                     </div>
     
-                    <div class="option_card">
-                        <div class="option_dish">
-                            <div class="dish_title">Velouté de légumes d'antan</div>
-                            <div class="dish_subtitle">Carotte, panais, topinambour</div>
+                    <div class="option__list--card">
+                        <div class="dish">
+                            <div class="dish__title">Velouté de légumes d'antan</div>
+                            <div class="dish__subtitle">Carotte, panais, topinambour</div>
                         </div>
-                        <div class="option_price"> 35€ </div>
+
+                        <div class="price_validation"> 
+                            <div class="price"> 35€ </div>
+                            <div class="validation"> <i class="fas fa-check-circle"></i></div>
+                        </div>
                     </div>
     
-                    <div class="option_card">
-                        <div class="option_dish">
-                            <div class="dish_title">Soupe à l'oignon</div>
-                            <div class="dish_subtitle">Revisitée</div>
+                    <div class="option__list--card">
+                        <div class="dish">
+                            <div class="dish__title">Soupe à l'oignon</div>
+                            <div class="dish__subtitle">Revisitée</div>
                         </div>
-                        <div class="option_price"> 20€ </div>
+                        <div class="price_validation"> 
+                            <div class="price"> 20€ </div>
+                            <div class="validation"> <i class="fas fa-check-circle"></i></div>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <!-- option 2: dish -->
-            <div class="menu_option">
-                <div class="option_title">Plats</div>
-                <div class="option_list">
-                    <div class="option_card">
-                        <div class="option_dish">
-                            <div class="dish_title">Coquilles Saint-Jacques</div>
-                            <div class="dish_subtitle">Accompagnées d'une purée de panais</div>
+            <div class="option">
+                <h3 class="option__title">Plats</h3>
+                <div class="option__list">
+                    <div class="option__list--card">
+                        <div class="dish">
+                            <div class="dish__title">Coquilles Saint-Jacques</div>
+                            <div class="dish__subtitle">Accompagnées d'une purée de panais</div>
                         </div>
-                        <div class="option_price"> 40€ </div>
+                        <div class="price_validation"> 
+                            <div class="price"> 40€ </div>
+                            <div class="validation"> <i class="fas fa-check-circle"></i></div>
+                        </div>
                     </div>
     
-                    <div class="option_card">
-                        <div class="option_dish">
-                            <div class="dish_title">Magret de Canard</div>
-                            <div class="dish_subtitle">Et parmentier de pommes de terre</div>
+                    <div class="option__list--card">
+                        <div class="dish">
+                            <div class="dish__title">Magret de Canard</div>
+                            <div class="dish__subtitle">Et parmentier de pommes de terre</div>
                         </div>
-                        <div class="option_price"> 35€ </div>
+                        <div class="price_validation"> 
+                            <div class="price"> 35€ </div>
+                            <div class="validation"> <i class="fas fa-check-circle"></i></div>
+                        </div>
                     </div>
     
-                    <div class="option_card">
-                        <div class="option_dish">
-                            <div class="dish_title">Pigeonneau d'Ille-et-vilaine</div>
-                            <div class="dish_subtitle">Sur son lit de gnocchis aux légumes</div>
+                    <div class="option__list--card">
+                        <div class="dish">
+                            <div class="dish__title">Pigeonneau d'Ille-et-vilaine</div>
+                            <div class="dish__subtitle">Sur son lit de gnocchis aux légumes</div>
                         </div>
-                        <div class="option_price"> 44€ </div>
+                        <div class="price_validation"> 
+                            <div class="price"> 44€ </div>
+                            <div class="validation"> <i class="fas fa-check-circle"></i></div>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <!-- option 3: dessert -->
-            <div class="menu_option">
-                <div class="option_title">Desserts</div>
-                <div class="option_list">
-                    <div class="option_card">
-                        <div class="option_dish">
-                            <div class="dish_title">Pétales de violettes glacés</div>
-                            <div class="dish_subtitle">Et purée de noisettes</div>
+            <div class="option">
+                <h3 class="option__title">Desserts</h3>
+                <div class="option__list">
+                    <div class="option__list--card">
+                        <div class="dish">
+                            <div class="dish__title">Pétales de violettes glacés</div>
+                            <div class="dish__subtitle">Et purée de noisettes</div>
                         </div>
-                        <div class="option_price"> 18€ </div>
+                        <div class="price_validation"> 
+                            <div class="price"> 18€ </div>
+                            <div class="validation"> <i class="fas fa-check-circle"></i></div>
+                        </div>
                     </div>
     
-                    <div class="option_card">
-                        <div class="option_dish">
-                            <div class="dish_title">Fondant au chocolat</div>
-                            <div class="dish_subtitle">Revisité</div>
+                    <div class="option__list--card">
+                        <div class="dish">
+                            <div class="dish__title">Fondant au chocolat</div>
+                            <div class="dish__subtitle">Revisité</div>
                         </div>
-                        <div class="option_price"> 22€ </div>
+                        <div class="price_validation"> 
+                            <div class="price"> 22€ </div>
+                            <div class="validation"> <i class="fas fa-check-circle"></i></div>
+                        </div>
                     </div>
     
-                    <div class="option_card">
-                        <div class="option_dish">
-                            <div class="dish_title">Millefeuille croustillant</div>
-                            <div class="dish_subtitle">Myrtilles et pâte d'amande</div>
+                    <div class="option__list--card">
+                        <div class="dish">
+                            <div class="dish__title">Millefeuille croustillant</div>
+                            <div class="dish__subtitle">Myrtilles et pâte d'amande</div>
                         </div>
-                        <div class="option_price"> 23€ </div>
+
+                        <div class="price_validation"> 
+                            <div class="price"> 25€ </div>
+                            <div class="validation"> <i class="fas fa-check-circle"></i></div>
+                        </div>
+                    
                     </div>
                 </div>
+
             </div>
         </div>
 
-        <button class="menu_order_button">Commander</button>
+        <div class="menu_order">
+            <button class="menu_order__button">Commander</button>
+        </div>
     </div>
 
 
@@ -138,11 +181,13 @@
 
         <!-- Nav-->
         <nav class="nav">
-            <a class="nav__logo" href="">ohmyfood</a>
-            <ul> <li><a href=""> <i class="fas fa-utensils"></i> Proposer un restaurant </a></li> </ul>
-            <ul> <li><a href=""> <i class="fas fa-hands-helping"></i> Devenir partenaire </a></li> </ul>
-            <ul> <li> <a href=""> Mentions légales </a> </li> </ul>
-            <ul> <li> <a href="mailto:contact@ohmyfood.com"> Contact </a> </li> </ul>
+            <a class="nav__logo" href="/index.html">ohmyfood</a>
+            <ul>
+                <li><a href=""> <i class="fas fa-utensils"></i> Proposer un restaurant </a></li>
+                <li><a href=""> <i class="fas fa-hands-helping"></i> Devenir partenaire </a></li> 
+                <li> <a href=""> Mentions légales </a> </li> 
+                <li> <a href="mailto:contact@ohmyfood.com"> Contact </a> </li>
+            </ul>
         </nav>
     </footer>
 
