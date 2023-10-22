@@ -15,7 +15,7 @@
     height: 100vh;
     position: fixed;
     inset: 0;
-    z-index: 1;
+    z-index: 3;
     animation: noloader forwards; //set position when animation is over
     animation-delay: 2s;
     transform-origin: bottom; //dissapear by the bottom

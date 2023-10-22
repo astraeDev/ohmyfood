@@ -8,6 +8,10 @@
 @import 'mixins';
 
 
+// ---------- Components
+@import 'components';
+
+
 // ---------- GENERAL
 *   body {
     font-family: $font-stack;
@@ -27,7 +31,7 @@
 // ---------- Loader
 
 .loader {
-    @include loader
+    @include loader();
 }
 
 // ---------- HEADER

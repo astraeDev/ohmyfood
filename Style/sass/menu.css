@@ -16,11 +16,11 @@
 
 .loader {
   background-color: white;
-  opacity: 0.8;
+  opacity: 0.9;
   height: 100vh;
   position: fixed;
   inset: 0;
-  z-index: 1;
+  z-index: 3;
   animation: noloader forwards;
   animation-delay: 2s;
   transform-origin: bottom;
@@ -39,6 +39,7 @@
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  margin-top: -30px;
 }
 @keyframes noloader {
   0% {
