@@ -186,6 +186,11 @@
             max-height: 230px;
             object-fit: cover;
             border-radius: 15px 15px 0 0px;
+
+            @include md {
+                min-width: 280px;
+                min-height: 232px;
+                };
         }
         
         &--new {
