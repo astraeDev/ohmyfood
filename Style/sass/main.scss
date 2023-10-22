@@ -8,6 +8,9 @@
 // ---------- Mixins
 @import 'mixins';
 
+// ---------- Mixins
+@import 'components';
+
 
 // ---------- GENERAL
 *   body {
@@ -34,41 +37,7 @@
 // ---------- Loader
 
 .loader {
-    background-color: #ffff;
-    opacity:0.8;
-    height: 100vh;
-    position: fixed;
-    inset: 0;
-    z-index: 1;
-    animation: noloader forwards; //set position when animation is over
-    animation-delay: 2s;
-    transform-origin: bottom; //dissapear by the bottom
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    i {
-        display: grid;
-        background: $gradient;
-        place-items: center;
-        color:black;
-        font-size: 90px;
-        border: solid #800080;
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-    }
-}
-
-@keyframes noloader {
-    0%{
-        transform: scale(1);
-    }
-
-    100%{
-        transform: scale(0);
-    }
+    @include loader
 }
 
 // ---------- HEADER
